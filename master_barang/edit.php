@@ -19,7 +19,8 @@ if(isset($_POST['update']))
     $mysqli,
     "
       UPDATE master_barang
-      SET kode_barang='$kode_barang',nama_barang='$nama_barang',harga_jual='$harga_jual',harga_beli='$harga_beli',satuan='$satuan',kategori='$kategori' WHERE id=$id
+      SET kode_barang='$kode_barang',nama_barang='$nama_barang',harga_jual='$harga_jual',harga_beli='$harga_beli',satuan='$satuan',kategori='$kategori'
+      WHERE id='$id'
     "
   );
 
